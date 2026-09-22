@@ -71,7 +71,7 @@
   </aside>
   <div class="main">
     <div class="topbar">
-      <h1 id="pageTitle">Halo,cuyy👋</h1>
+      <h1 id="pageTitle">Dashboard</h1>
       <span id="jam" class="muted" style="font-size:14px"></span>
       <div class="actions">
         <button onclick="sapa()">Sapa Saya</button>
@@ -133,7 +133,7 @@
   // PERBAIKAN DI SINI: Menambahkan [data-page] agar JS tidak mengganggu link IG dan Email
   const links = document.querySelectorAll('.sidebar a[data-page]');
   
-  const titles = {dashboard:'Halo,cuyy👋',profil:'Profil Saya',project:'Project Saya',gaming:'Gaming 🎮',music:'Music 🎵',sports:'Sports ⚽',kontak:'Kontak ✉️',galeri:'Galeri 📸',pengaturan:'Pengaturan'};
+  const titles = {dashboard:'Dashboard',profil:'Profil Saya',project:'Project Saya',gaming:'Gaming 🎮',music:'Music 🎵',sports:'Sports ⚽',kontak:'Kontak ✉️',galeri:'Galeri 📸',pengaturan:'Pengaturan'};
   links.forEach(l=>l.addEventListener('click',e=>{e.preventDefault();links.forEach(x=>x.classList.remove('active'));l.classList.add('active');document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(l.dataset.page).classList.add('active');document.getElementById('pageTitle').textContent=titles[l.dataset.page];}));
 </script>
 </body>
